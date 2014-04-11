@@ -1,4 +1,4 @@
-# rm_theme
+# septem
 ## roromedia base theme for drupal
 https://bitbucket.org/roromediateam/rm_theme
 
