@@ -1,5 +1,5 @@
 # septem
-## roromedia base theme for drupal
+## Drupal administration theme (sub theme of seven)
 https://bitbucket.org/roromediateam/rm_theme
 
 ### License
