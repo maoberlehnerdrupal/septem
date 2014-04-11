@@ -1,5 +1,5 @@
 # septem
-## Drupal administration theme (sub theme of seven)
+Drupal administration theme (sub theme of seven)  
 https://github.com/maoberlehner/septem
 
 ### License
