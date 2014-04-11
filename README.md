@@ -1,6 +1,6 @@
 # septem
 ## Drupal administration theme (sub theme of seven)
-https://bitbucket.org/roromediateam/rm_theme
+https://github.com/maoberlehner/septem
 
 ### License
 rm_theme is licensed under GPL v2 (http://www.gnu.org/licenses/gpl-2.0.html)
