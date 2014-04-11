@@ -1,0 +1,128 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic);
+/*------------------------------------*\
+  $VARIABLES
+\*------------------------------------*/
+/**
+ * CONTENTS
+ * FONT................
+ * COLOR-SHEME.........Set theme colors
+ * FONT................
+ * BASE................
+ * HEADER..............
+ * CONTENT.............
+ * FORM................
+ * LISTS...............
+ */
+/*------------------------------------*\
+  $FONT
+\*------------------------------------*/
+/*------------------------------------*\
+  $COLOR-SHEME
+\*------------------------------------*/
+/**
+ * Basic colors
+ * Fancy generator: https://kuler.adobe.com
+ */
+/*------------------------------------*\
+  $FONT
+\*------------------------------------*/
+/*------------------------------------*\
+  $BASE
+\*------------------------------------*/
+body {
+  font: normal 87.5%/1.538em "Source Sans Pro", sans-serif, sans-serif;
+}
+
+html,
+button,
+input,
+select,
+textarea,
+input.form-submit,
+a.button {
+  color: #333333;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+:focus {
+  outline: none;
+}
+
+/**
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #0074bd;
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #0074bd;
+  color: #fff;
+  text-shadow: none;
+}
+
+/*------------------------------------*\
+  $HEADER
+\*------------------------------------*/
+#branding {
+  padding-top: 10px;
+}
+#branding h1.page-title {
+  color: #333333;
+}
+
+/*------------------------------------*\
+  $CONTENT
+\*------------------------------------*/
+#page {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/*------------------------------------*\
+  $FORM
+\*------------------------------------*/
+input.form-text,
+input.form-file,
+textarea.form-textarea,
+select.form-select {
+  padding: 0.35em;
+  border: 1px solid #cccccc;
+  font-size: 1em;
+  -webkit-transition: border-color 0.2s;
+  transition: border-color 0.2s;
+}
+input.form-text:focus,
+input.form-file:focus,
+textarea.form-textarea:focus,
+select.form-select:focus {
+  border-color: #0074bd;
+}
+
+html.js input.form-autocomplete {
+  background-position: 99.75% 5px;
+}
+html.js input.form-autocomplete.throbbing {
+  background-position: 99.75% -15px;
+}
+
+/*------------------------------------*\
+  $LISTS
+\*------------------------------------*/
+ul.action-links {
+  padding: 0;
+}
+
+ul.primary li {
+  margin: 0 0 0 5px;
+}
+ul.primary li a:link {
+  border: none;
+  border-radius: 0;
+}
+
+/*# sourceMappingURL=septem.css.map */

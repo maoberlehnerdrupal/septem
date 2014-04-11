@@ -1,0 +1,161 @@
+/*------------------------------------*\
+  $VARIABLES
+\*------------------------------------*/
+/**
+ * CONTENTS
+ * FONT................
+ * COLOR-SHEME.........Set theme colors
+ * FONT................
+ * BASE................
+ * HEADER..............
+ * CONTENT.............
+ * FORM................
+ * LISTS...............
+ */
+
+
+
+/*------------------------------------*\
+  $FONT
+\*------------------------------------*/
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic);
+
+
+
+/*------------------------------------*\
+  $COLOR-SHEME
+\*------------------------------------*/
+/**
+ * Basic colors
+ * Fancy generator: https://kuler.adobe.com
+ */
+$cs-a: #0074BD; // blue
+$cs-b: #cccccc; // grey
+
+
+
+/*------------------------------------*\
+  $FONT
+\*------------------------------------*/
+
+$font-family:     'Source Sans Pro', sans-serif;
+$font-base-color: #333;
+
+
+
+/*------------------------------------*\
+  $BASE
+\*------------------------------------*/
+
+body {
+  font: normal 87.5%/1.538em $font-family, sans-serif;
+}
+
+html,
+button,
+input,
+select,
+textarea,
+input.form-submit,
+a.button {
+  color: $font-base-color;
+  font-family: $font-family;
+}
+
+:focus {
+  outline: none;
+}
+
+/**
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: $cs-a;
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background: $cs-a;
+  color: #fff;
+  text-shadow: none;
+}
+
+
+
+/*------------------------------------*\
+  $HEADER
+\*------------------------------------*/
+
+#branding {
+  padding-top: 10px;
+
+  h1.page-title {
+    color: $font-base-color;
+  }
+}
+
+
+
+/*------------------------------------*\
+  $CONTENT
+\*------------------------------------*/
+
+#page {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+
+
+/*------------------------------------*\
+  $FORM
+\*------------------------------------*/
+
+input.form-text,
+input.form-file,
+textarea.form-textarea,
+select.form-select {
+  padding: 0.35em;
+  border: 1px solid $cs-b;
+  font-size: 1em;
+  transition: border-color 0.2s;
+
+  &:focus {
+    border-color: $cs-a;
+  }
+}
+
+input.form-autocomplete {
+  html.js & {
+    background-position: 99.75% 5px;
+
+    &.throbbing {
+      background-position: 99.75% -15px;
+    }
+  }
+}
+
+
+
+/*------------------------------------*\
+  $LISTS
+\*------------------------------------*/
+
+ul.action-links {
+  padding: 0;
+}
+
+ul.primary {
+  li {
+    margin: 0 0 0 5px;
+
+    a:link {
+      border: none;
+      border-radius: 0;
+    }
+  }
+}
