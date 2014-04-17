@@ -104,10 +104,10 @@ select.form-select:focus {
 }
 
 html.js input.form-autocomplete {
-  background-position: 99.75% 5px;
+  background-position: 99.75% 7px;
 }
 html.js input.form-autocomplete.throbbing {
-  background-position: 99.75% -15px;
+  background-position: 99.75% -13px;
 }
 
 /*------------------------------------*\
