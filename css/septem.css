@@ -1,475 +1,153 @@
+/*------------------------------------*\ $VARIABLES
+\*------------------------------------*/
+/** CONTENTS FONT................ BREAKPOINTS......... COLOR-SHEME.........Set theme colors FONT................ BASE................ HEADER.............. CONTENT............. FORM................ LISTS............... GRID................ */
+/*------------------------------------*\ $FONT
+\*------------------------------------*/
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic);
-/*------------------------------------*\
-  $VARIABLES
+/*------------------------------------*\ $BREAKPOINTS
 \*------------------------------------*/
-/**
- * CONTENTS
- * FONT................
- * BREAKPOINTS.........
- * COLOR-SHEME.........Set theme colors
- * FONT................
- * BASE................
- * HEADER..............
- * CONTENT.............
- * FORM................
- * LISTS...............
- * GRID................
- */
-/*------------------------------------*\
-  $FONT
+/*------------------------------------*\ $COLOR-SHEME
 \*------------------------------------*/
-/*------------------------------------*\
-  $BREAKPOINTS
+/** Basic colors Fancy generator: https://kuler.adobe.com */
+/*------------------------------------*\ $FONT
 \*------------------------------------*/
-/*------------------------------------*\
-  $COLOR-SHEME
+/*------------------------------------*\ $BASE
 \*------------------------------------*/
-/**
- * Basic colors
- * Fancy generator: https://kuler.adobe.com
- */
-/*------------------------------------*\
-  $FONT
+body { font: normal 87.5%/1.538em "Source Sans Pro", sans-serif, sans-serif; }
+
+html, button, input, select, textarea, input.form-submit, a.button { color: #333333; font-family: "Source Sans Pro", sans-serif; }
+
+:focus { outline: none; }
+
+/** Remove text-shadow in selection highlight: h5bp.com/i These selection rule sets have to be separate. Customize the background color to match your design. */
+::-moz-selection { background: #0074bd; color: #fff; text-shadow: none; }
+
+::selection { background: #0074bd; color: #fff; text-shadow: none; }
+
+/*------------------------------------*\ $HEADER
 \*------------------------------------*/
-/*------------------------------------*\
-  $BASE
+#branding { padding-top: 10px; }
+#branding h1.page-title { color: #333333; }
+
+/*------------------------------------*\ $CONTENT
 \*------------------------------------*/
-body {
-  font: normal 87.5%/1.538em "Source Sans Pro", sans-serif, sans-serif;
-}
+#page { margin-right: 20px; margin-left: 20px; }
 
-html,
-button,
-input,
-select,
-textarea,
-input.form-submit,
-a.button {
-  color: #333333;
-  font-family: "Source Sans Pro", sans-serif;
-}
-
-:focus {
-  outline: none;
-}
-
-/**
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-::-moz-selection {
-  background: #0074bd;
-  color: #fff;
-  text-shadow: none;
-}
-
-::selection {
-  background: #0074bd;
-  color: #fff;
-  text-shadow: none;
-}
-
-/*------------------------------------*\
-  $HEADER
+/*------------------------------------*\ $FORM
 \*------------------------------------*/
-#branding {
-  padding-top: 10px;
-}
-#branding h1.page-title {
-  color: #333333;
-}
+input.form-text, input.form-file, textarea.form-textarea, select.form-select { padding: 0.35em; border: 1px solid #cccccc; font-size: 1em; -webkit-transition: border-color 0.2s; transition: border-color 0.2s; }
+input.form-text:focus, input.form-file:focus, textarea.form-textarea:focus, select.form-select:focus { border-color: #0074bd; }
 
-/*------------------------------------*\
-  $CONTENT
+html.js input.form-autocomplete { background-position: 99.75% 7px; }
+html.js input.form-autocomplete.throbbing { background-position: 99.75% -13px; }
+
+/*------------------------------------*\ $LISTS
 \*------------------------------------*/
-#page {
-  margin-right: 20px;
-  margin-left: 20px;
-}
+ul.action-links { padding: 0; }
 
-/*------------------------------------*\
-  $FORM
+ul.primary li { margin: 0 0 0 5px; }
+ul.primary li a:link { border: none; border-radius: 0; }
+
+/*------------------------------------*\ $GRID
 \*------------------------------------*/
-input.form-text,
-input.form-file,
-textarea.form-textarea,
-select.form-select {
-  padding: 0.35em;
-  border: 1px solid #cccccc;
-  font-size: 1em;
-  -webkit-transition: border-color 0.2s;
-  transition: border-color 0.2s;
-}
-input.form-text:focus,
-input.form-file:focus,
-textarea.form-textarea:focus,
-select.form-select:focus {
-  border-color: #0074bd;
-}
-
-html.js input.form-autocomplete {
-  background-position: 99.75% 7px;
-}
-html.js input.form-autocomplete.throbbing {
-  background-position: 99.75% -13px;
-}
-
-/*------------------------------------*\
-  $LISTS
+/** Variables */
+/*------------------------------------*\ GRID
 \*------------------------------------*/
-ul.action-links {
-  padding: 0;
-}
-
-ul.primary li {
-  margin: 0 0 0 5px;
-}
-ul.primary li a:link {
-  border: none;
-  border-radius: 0;
-}
-
-/*------------------------------------*\
-  $GRID
+/** CONTENTS BASE................ SMALL............... MEDIUM.............. LARGE............... XLARGE..............   <div class="grid"> <div class="grid__item--6 grid__item--m--3"> [optional]<div class="grid__inner"></div>[/optional] </div> <div class="grid__item--6 grid__item--m--3"> [optional]<div class="grid__inner"></div>[/optional] </div> <div class="grid__item--12 grid__item--s--6"> [optional]<div class="grid__inner"></div>[/optional] </div> <div class="grid__item--12 grid__item--s--6"> [optional]<div class="grid__inner"></div>[/optional] </div> </div> */
+/*------------------------------------*\ $BASE
 \*------------------------------------*/
-/**
- * Variables
- */
-/*------------------------------------*\
-  GRID
+/** Styles for all devices */
+.grid { overflow: hidden; }
+@media all and (max-width: 719px) { .grid { margin-left: -1em; } }
+
+[class*="grid__item"] { float: left; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 100%; }
+@media all and (max-width: 719px) { [class*="grid__item"] { padding-left: 1em; } }
+
+.grid__item--1 { width: 8.3333333%; }
+
+.grid__item--2 { width: 16.6666667%; }
+
+.grid__item--3 { width: 25%; }
+
+.grid__item--4 { width: 33.3333333%; }
+
+.grid__item--5 { width: 41.6666667%; }
+
+.grid__item--6 { width: 50%; }
+
+.grid__item--7 { width: 58.3333333%; }
+
+.grid__item--8 { width: 66.6666667%; }
+
+.grid__item--9 { width: 75%; }
+
+.grid__item--10 { width: 83.3333333%; }
+
+.grid__item--11 { width: 91.6666667%; }
+
+.grid__item--12 { width: 100%; }
+
+/*------------------------------------*\ $SMALL
 \*------------------------------------*/
-/**
- * CONTENTS
- * BASE................
- * SMALL...............
- * MEDIUM..............
- * LARGE...............
- * XLARGE..............
- *
- *
- * <div class="grid">
- *   <div class="grid__item--6 grid__item--m--3">
- *     [optional]<div class="grid__inner"></div>[/optional]
- *   </div>
- *   <div class="grid__item--6 grid__item--m--3">
- *     [optional]<div class="grid__inner"></div>[/optional]
- *   </div>
- *   <div class="grid__item--12 grid__item--s--6">
- *     [optional]<div class="grid__inner"></div>[/optional]
- *   </div>
- *   <div class="grid__item--12 grid__item--s--6">
- *     [optional]<div class="grid__inner"></div>[/optional]
- *   </div>
- * </div>
- */
-/*------------------------------------*\
-  $BASE
+@media all and (min-width: 480px) { .grid__item--s--1 { width: 8.3333333%; }
+  .grid__item--s--2 { width: 16.6666667%; }
+  .grid__item--s--3 { width: 25%; }
+  .grid__item--s--4 { width: 33.3333333%; }
+  .grid__item--s--5 { width: 41.6666667%; }
+  .grid__item--s--6 { width: 50%; }
+  .grid__item--s--7 { width: 58.3333333%; }
+  .grid__item--s--8 { width: 66.6666667%; }
+  .grid__item--s--9 { width: 75%; }
+  .grid__item--s--10 { width: 83.3333333%; }
+  .grid__item--s--11 { width: 91.6666667%; }
+  .grid__item--s--12 { width: 100%; } }
+/*------------------------------------*\ $MEDIUM
 \*------------------------------------*/
-/**
- * Styles for all devices
- */
-.grid {
-  overflow: hidden;
-}
-@media all and (max-width: 719px) {
-  .grid {
-    margin-left: -1em;
-  }
-}
-
-[class*="grid__item"] {
-  float: left;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-}
-@media all and (max-width: 719px) {
-  [class*="grid__item"] {
-    padding-left: 1em;
-  }
-}
-
-.grid__item--1 {
-  width: 8.3333333%;
-}
-
-.grid__item--2 {
-  width: 16.6666667%;
-}
-
-.grid__item--3 {
-  width: 25%;
-}
-
-.grid__item--4 {
-  width: 33.3333333%;
-}
-
-.grid__item--5 {
-  width: 41.6666667%;
-}
-
-.grid__item--6 {
-  width: 50%;
-}
-
-.grid__item--7 {
-  width: 58.3333333%;
-}
-
-.grid__item--8 {
-  width: 66.6666667%;
-}
-
-.grid__item--9 {
-  width: 75%;
-}
-
-.grid__item--10 {
-  width: 83.3333333%;
-}
-
-.grid__item--11 {
-  width: 91.6666667%;
-}
-
-.grid__item--12 {
-  width: 100%;
-}
-
-/*------------------------------------*\
-  $SMALL
+@media all and (min-width: 720px) { .grid { margin-left: -1em; }
+  [class*="grid__item"] { padding-left: 1em; }
+  .grid__item--m--1 { width: 8.3333333%; }
+  .grid__item--m--2 { width: 16.6666667%; }
+  .grid__item--m--3 { width: 25%; }
+  .grid__item--m--4 { width: 33.3333333%; }
+  .grid__item--m--5 { width: 41.6666667%; }
+  .grid__item--m--6 { width: 50%; }
+  .grid__item--m--7 { width: 58.3333333%; }
+  .grid__item--m--8 { width: 66.6666667%; }
+  .grid__item--m--9 { width: 75%; }
+  .grid__item--m--10 { width: 83.3333333%; }
+  .grid__item--m--11 { width: 91.6666667%; }
+  .grid__item--m--12 { width: 100%; } }
+/*------------------------------------*\ $LARGE
 \*------------------------------------*/
-@media all and (min-width: 480px) {
-  .grid__item--s--1 {
-    width: 8.3333333%;
-  }
-
-  .grid__item--s--2 {
-    width: 16.6666667%;
-  }
-
-  .grid__item--s--3 {
-    width: 25%;
-  }
-
-  .grid__item--s--4 {
-    width: 33.3333333%;
-  }
-
-  .grid__item--s--5 {
-    width: 41.6666667%;
-  }
-
-  .grid__item--s--6 {
-    width: 50%;
-  }
-
-  .grid__item--s--7 {
-    width: 58.3333333%;
-  }
-
-  .grid__item--s--8 {
-    width: 66.6666667%;
-  }
-
-  .grid__item--s--9 {
-    width: 75%;
-  }
-
-  .grid__item--s--10 {
-    width: 83.3333333%;
-  }
-
-  .grid__item--s--11 {
-    width: 91.6666667%;
-  }
-
-  .grid__item--s--12 {
-    width: 100%;
-  }
-}
-/*------------------------------------*\
-  $MEDIUM
+@media all and (min-width: 960px) { .grid { margin-left: -1.5em; }
+  [class*="grid__item"] { padding-left: 1.5em; }
+  .grid__item--l--1 { width: 8.3333333%; }
+  .grid__item--l--2 { width: 16.6666667%; }
+  .grid__item--l--3 { width: 25%; }
+  .grid__item--l--4 { width: 33.3333333%; }
+  .grid__item--l--5 { width: 41.6666667%; }
+  .grid__item--l--6 { width: 50%; }
+  .grid__item--l--7 { width: 58.3333333%; }
+  .grid__item--l--8 { width: 66.6666667%; }
+  .grid__item--l--9 { width: 75%; }
+  .grid__item--l--10 { width: 83.3333333%; }
+  .grid__item--l--11 { width: 91.6666667%; }
+  .grid__item--l--12 { width: 100%; } }
+/*------------------------------------*\ $XLARGE
 \*------------------------------------*/
-@media all and (min-width: 720px) {
-  .grid {
-    margin-left: -1em;
-  }
-
-  [class*="grid__item"] {
-    padding-left: 1em;
-  }
-
-  .grid__item--m--1 {
-    width: 8.3333333%;
-  }
-
-  .grid__item--m--2 {
-    width: 16.6666667%;
-  }
-
-  .grid__item--m--3 {
-    width: 25%;
-  }
-
-  .grid__item--m--4 {
-    width: 33.3333333%;
-  }
-
-  .grid__item--m--5 {
-    width: 41.6666667%;
-  }
-
-  .grid__item--m--6 {
-    width: 50%;
-  }
-
-  .grid__item--m--7 {
-    width: 58.3333333%;
-  }
-
-  .grid__item--m--8 {
-    width: 66.6666667%;
-  }
-
-  .grid__item--m--9 {
-    width: 75%;
-  }
-
-  .grid__item--m--10 {
-    width: 83.3333333%;
-  }
-
-  .grid__item--m--11 {
-    width: 91.6666667%;
-  }
-
-  .grid__item--m--12 {
-    width: 100%;
-  }
-}
-/*------------------------------------*\
-  $LARGE
-\*------------------------------------*/
-@media all and (min-width: 960px) {
-  .grid {
-    margin-left: -1.5em;
-  }
-
-  [class*="grid__item"] {
-    padding-left: 1.5em;
-  }
-
-  .grid__item--l--1 {
-    width: 8.3333333%;
-  }
-
-  .grid__item--l--2 {
-    width: 16.6666667%;
-  }
-
-  .grid__item--l--3 {
-    width: 25%;
-  }
-
-  .grid__item--l--4 {
-    width: 33.3333333%;
-  }
-
-  .grid__item--l--5 {
-    width: 41.6666667%;
-  }
-
-  .grid__item--l--6 {
-    width: 50%;
-  }
-
-  .grid__item--l--7 {
-    width: 58.3333333%;
-  }
-
-  .grid__item--l--8 {
-    width: 66.6666667%;
-  }
-
-  .grid__item--l--9 {
-    width: 75%;
-  }
-
-  .grid__item--l--10 {
-    width: 83.3333333%;
-  }
-
-  .grid__item--l--11 {
-    width: 91.6666667%;
-  }
-
-  .grid__item--l--12 {
-    width: 100%;
-  }
-}
-/*------------------------------------*\
-  $XLARGE
-\*------------------------------------*/
-@media all and (min-width: 1200px) {
-  .grid {
-    margin-left: -2em;
-  }
-
-  [class*="grid__item"] {
-    padding-left: 2em;
-  }
-
-  .grid__item--l--1 {
-    width: 8.3333333%;
-  }
-
-  .grid__item--l--2 {
-    width: 16.6666667%;
-  }
-
-  .grid__item--l--3 {
-    width: 25%;
-  }
-
-  .grid__item--l--4 {
-    width: 33.3333333%;
-  }
-
-  .grid__item--l--5 {
-    width: 41.6666667%;
-  }
-
-  .grid__item--l--6 {
-    width: 50%;
-  }
-
-  .grid__item--l--7 {
-    width: 58.3333333%;
-  }
-
-  .grid__item--l--8 {
-    width: 66.6666667%;
-  }
-
-  .grid__item--l--9 {
-    width: 75%;
-  }
-
-  .grid__item--l--10 {
-    width: 83.3333333%;
-  }
-
-  .grid__item--l--11 {
-    width: 91.6666667%;
-  }
-
-  .grid__item--l--12 {
-    width: 100%;
-  }
-}
+@media all and (min-width: 1200px) { .grid { margin-left: -2em; }
+  [class*="grid__item"] { padding-left: 2em; }
+  .grid__item--l--1 { width: 8.3333333%; }
+  .grid__item--l--2 { width: 16.6666667%; }
+  .grid__item--l--3 { width: 25%; }
+  .grid__item--l--4 { width: 33.3333333%; }
+  .grid__item--l--5 { width: 41.6666667%; }
+  .grid__item--l--6 { width: 50%; }
+  .grid__item--l--7 { width: 58.3333333%; }
+  .grid__item--l--8 { width: 66.6666667%; }
+  .grid__item--l--9 { width: 75%; }
+  .grid__item--l--10 { width: 83.3333333%; }
+  .grid__item--l--11 { width: 91.6666667%; }
+  .grid__item--l--12 { width: 100%; } }
 
 /*# sourceMappingURL=septem.css.map */
