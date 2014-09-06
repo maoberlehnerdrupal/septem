@@ -4,6 +4,7 @@
 /**
  * CONTENTS
  * FONT................
+ * BREAKPOINTS.........
  * COLOR-SHEME.........Set theme colors
  * FONT................
  * BASE................
@@ -11,6 +12,7 @@
  * CONTENT.............
  * FORM................
  * LISTS...............
+ * GRID................
  */
 
 
@@ -20,6 +22,22 @@
 \*------------------------------------*/
 
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic);
+
+
+
+/*------------------------------------*\
+  $BREAKPOINTS
+\*------------------------------------*/
+
+$breakpoint-s:  480px;
+$breakpoint-m:  720px;
+$breakpoint-l:  960px;
+$breakpoint-xl: 1200px;
+
+$breakpoint-s-max:  $breakpoint-s - 1;
+$breakpoint-m-max:  $breakpoint-m - 1;
+$breakpoint-l-max:  $breakpoint-l - 1;
+$breakpoint-xl-max: $breakpoint-xl - 1;
 
 
 
@@ -131,10 +149,10 @@ select.form-select {
 
 input.form-autocomplete {
   html.js & {
-    background-position: 99.75% 5px;
+    background-position: 99.75% 7px;
 
     &.throbbing {
-      background-position: 99.75% -15px;
+      background-position: 99.75% -13px;
     }
   }
 }
@@ -159,3 +177,27 @@ ul.primary {
     }
   }
 }
+
+
+
+/*------------------------------------*\
+  $GRID
+\*------------------------------------*/
+/**
+ * Variables
+ */
+$u-grid-item-count: 12;
+
+// sizes
+$u-grid-size-s:  true;
+$u-grid-size-m:  true;
+$u-grid-size-l:  true;
+$u-grid-size-xl: true;
+
+// Spacing between items
+$u-grid-spacing-s:  1em;
+$u-grid-spacing-m:  1em;
+$u-grid-spacing-l:  1.5em;
+$u-grid-spacing-xl: 2em;
+
+@import 'grid';
